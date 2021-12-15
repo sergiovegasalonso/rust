@@ -49,5 +49,49 @@ fn main() {
     spaces = spaces.len();
     */
 
+    // # Data types
+
+    // ## Scalar types
+
+    // ### Integer types
+
+    /*
+    Length	Signed	Unsigned
+    8-bit	i8	    u8
+    16-bit	i16	    u16
+    32-bit	i32	    u32
+    64-bit	i64	    u64
+    128-bit	i128	u128
+    arch	isize	usize
+    */
+
+    /*
+    Number literals	Example
+    Decimal	        98_222
+    Hex             0xff
+    Octal	        0o77
+    Binary	        0b1111_0000
+    Byte (u8 only)	b'A'
+    */
+
+    // ## Compound types
+
+    // ### The Tuple Type
+
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let five_hundred = tup.0;
+    println!("five_hundred: {}", five_hundred);
+    let six_point_four = tup.1;
+    println!("six_point_four: {}", six_point_four);
+    let one = tup.2;
+    println!("one: {}", one);
+
+    let (x, y, z) = tup;
+    println!("x: {}", x);
+    println!("y: {}", y);
+    println!("z: {}", z);
+
+
+    // ### The Array Type
 
 }
